@@ -2,54 +2,54 @@ package user;
 
 public class UserController {
 	private UserService userService;
+
 	public UserController() {
 		userService = new UserServiceImpl();
 	}
-	
-	public void postJoinUs(UserDTO user) {
-		userService.joinUs(user);
+
+	public void postJoin(UserDto user) {
+		userService.join(user);
 	}
-	
-	public UserDTO postLogin(UserDTO user) {
+
+	public UserDto postLogin(UserDto user) {
 		return userService.login(user);
 	}
-	
-	public void putmodifyPassword(UserDTO user) {
-		userService.modifyPassword(user);
+
+	public void putUpdate(UserDto user) {
+		userService.update(user);
 	}
-	
-	public void deleteUser(UserDTO user) {
-		userService.deleteUser(user);
+
+	public void deleteUser(UserDto user) {
+		userService.delete(user);
 	}
 
 	public boolean getIdCheck(String id) {
 		return userService.idCheck(id);
 	}
-	
-	public UserDTO getMyPage(UserDTO user) {
-		return userService.myPage(user);
+
+	public UserDto getMypage(UserDto user) {
+		return userService.mypage(user);
 	}
-	
-	public UserDTO[] getUserList() {
+
+	public UserDto[] getUserList() {
 		return userService.userList();
-	}	
-	
-	public UserDTO getIdSearch(String id) {
+	}
+
+	public UserDto getIdSearch(String id) {
 		return userService.idSearch(id);
 	}
-	
-	public UserDTO[] getNameSearch(String name) {
+	public int getCountSameName(String name) {
+		return userService.countSameName(name);
+	}
+
+	public UserDto[] getNameSearch(String name) {
 		return userService.nameSearch(name);
 	}
-	
+
 	public int getCount() {
 		return userService.count();
 	}
-	
+
 }
-
-
-
-
 
 

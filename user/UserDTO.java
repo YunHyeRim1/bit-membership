@@ -1,6 +1,6 @@
 package user;
 
-public class UserDTO {
+public class UserDto {
 	private String userid, password, name;
 	
 	public String getUserid() {
