@@ -1,5 +1,5 @@
 package util;
-
+// 버블정렬
 public class Sort {
 	public static void main(String[] args) {
 		int[] arr = {29, 45, 1, 14, 22};
@@ -7,7 +7,7 @@ public class Sort {
 		for(int i = 0; i < arr.length; i++) {
 			for(int j = 0; j < arr.length -i -1; j++) {
 				if(arr[j] > arr[j+1]) {
-					temp = arr[j];
+					temp = arr[j]; // 6번 지우고 int temp = arr[j]도 가능
 					arr[j] = arr[j+1];
 					arr[j+1] = temp;
 				}
@@ -18,7 +18,6 @@ public class Sort {
 		}
 	}
 }
-
 
 
 // arr.length-i-1 은 첫 바퀴 검사에서 가장 큰 값이 맨 뒤로 가게 한다.
