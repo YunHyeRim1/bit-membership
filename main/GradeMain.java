@@ -8,7 +8,6 @@ public class GradeMain {
 		Scanner scanner = new Scanner(System.in);
 		GradeController gradeController = new GradeController();
 		
-		
 		// 1등: a, 합계: 270 ,평균: 90.0
 		// 2등: b, 합계: 240 ,평균: 80.0
 		// 3등: c, 합계: 210 ,평균: 70.0
@@ -18,7 +17,7 @@ public class GradeMain {
 			switch (scanner.next()) {
 			case "1":
 				grade = new GradeDto();
-				System.out.println("이름, 국어점수, 영어점수, 수학점수");
+				System.out.println("이름, 국어 점수, 영어 점수, 수학 점수");
 				grade.setName(scanner.next());
 				grade.setKor(scanner.nextInt());
 				grade.setEng(scanner.nextInt());
