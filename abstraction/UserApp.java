@@ -2,6 +2,7 @@ package abstraction;
 import java.util.Scanner;
 public class UserApp {
 	public static void main(String[] args) {
+		
 		Scanner scanner = new Scanner(System.in);
 		UserController userController = new UserController();
 		UserDto user = null;
@@ -12,7 +13,7 @@ public class UserApp {
 					+ "(10)전체 회원수");
 			switch (scanner.next()) {
 			case "1":
-				System.out.println("[회원가입] 아이디,비번,이름 ");
+				System.out.println("[회원가입] 아이디, 비번, 이름 ");
 				user = new UserDto();
 				user.setUserid(scanner.next());
 				user.setPassword(scanner.next());
@@ -20,7 +21,7 @@ public class UserApp {
 				userController.postJoin(user);
 				break;
 			case "2":
-				System.out.println("[로그인] 아이디,비번 ");
+				System.out.println("[로그인] 아이디, 비번 ");
 				user = new UserDto();
 				user.setUserid(scanner.next());
 				user.setPassword(scanner.next());
@@ -39,7 +40,7 @@ public class UserApp {
 				userController.putUpdate(user);
 				break;
 			case "4":
-				System.out.println("[회원탈퇴] 아이디,비번 ");
+				System.out.println("[회원탈퇴] 아이디, 비번 ");
 				user.setUserid(scanner.next());
 				user.setPassword(scanner.next());
 				userController.deleteUser(user);
