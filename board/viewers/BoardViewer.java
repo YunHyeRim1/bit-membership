@@ -1,4 +1,4 @@
-package viewer;
+package board.viewers;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -6,21 +6,16 @@ import java.util.Calendar;
 import java.util.Collections;
 import java.util.Scanner;
 
-import controller.BoardController;
-import dto.BoardDTO;
-import dto.UserDTO;
-import util.ScannerUtil;
-
 public class BoardViewer {
     private Scanner scanner;
-    private BoardController boardController;
+    private ArticleController boardController;
     private UserViewer userViewer;
     private UserDTO logInUser;
     private ReplyViewer replyViewer;
     
     public BoardViewer() {
         scanner = new Scanner(System.in);
-        boardController = new BoardController();
+        boardController = new ArticleController();
         userViewer = new UserViewer();
         replyViewer = new ReplyViewer();
     }

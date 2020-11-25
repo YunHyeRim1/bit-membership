@@ -1,4 +1,4 @@
-package day01;
+package syntax;
 // 변수
 // 변수란, 해당 공간의 값이 바뀔 수 있는 공간을
 // 우리는 변수라고 지칭한다.
@@ -35,7 +35,7 @@ package day01;
 
 // 참조형 데이터타입에는 3가지 종류가 있다.
 // 클래스형, 배열형, 인터페이스형
- public class Ex02Variable {
+ public class Variable {
      public static void main(String[] args) {
          // int 형 변수를 하나 만들어보자
          int number;

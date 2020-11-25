@@ -1,4 +1,4 @@
-package day06;
+package array;
 
 import java.util.Random;
 
@@ -12,7 +12,7 @@ import java.util.Random;
 // intArray[1] = new int[4]
 // intArray[2] = new int[10]
 // 이런 식으로 만드는 것을 뜻한다.
-public class Ex01Array {
+public class Array04 {
     private static final int MAX_SIZE = 5;
     public static void main(String[] args) {
         int[][] intArray = new int[3][];

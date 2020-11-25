@@ -1,15 +1,13 @@
-package day05;
+package array;
 
 import java.util.Scanner;
-
-import util.ScannerUtil;
 
 // 학생별 국영수 점수를
 // 2차원 배열로 입력 받고
 // 번호와 이름도 배열로 입력 받아서
 // 출력할 때 각 학생의 국영수 점수와 정보들이 나오는 프로그램
 
-public class Ex13GradeBook02 {
+public class GradeBook02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // 학생들의 번호를 저장할 배열

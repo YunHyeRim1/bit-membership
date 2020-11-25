@@ -1,11 +1,8 @@
-package day07;
+package array;
 
 import java.util.Scanner;
 
-import util.ArrayUtil;
-import util.ScannerUtil;
-
-public class Ex01Board01 {
+public class Board01 {
     public static void main(String[] args) {
         showMenu();
     }

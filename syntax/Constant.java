@@ -1,9 +1,9 @@
-package day01;
+package syntax;
 // 상수(Constant)
 // 상수는 한번 값이 초기화되면
 // 더이상 바꿀 수 없게 된다.
 // 상수는 우리가 제일 앞에 final 이라는 키워드를 붙여서 만들어 준다.
-public class Ex09Constant {
+public class Constant {
     public static void main(String[] args) {
         int myNumber = 30;
         System.out.println("myNumber의 현재값: "+myNumber);

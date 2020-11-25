@@ -1,4 +1,4 @@
-package day01;
+package syntax;
 //기본형 데이터타입 - 문자형
 //문자형 기본데이터타입은 한개의 문자만 다룬다.
 //문자의 경우 아스키테이블이라는 문자 코드 테이블을 사용해서
@@ -6,7 +6,7 @@ package day01;
 //우리가 문자형 데이터타입을 할당할 때에는
 //'A' 이렇게 따옴표 안에 글자를 넣어서 할당하거나
 //해당 글자의 코드값을 직접 넣어줄 수도 있다.
-public class Ex07PrimitiveType03 {
+public class PrimitiveType03 {
     public static void main(String[] args) {
         //문자형 데이터타입은
         //character를 줄여서

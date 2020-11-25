@@ -1,4 +1,4 @@
-package day01;
+package syntax;
 // 자바의 이름짓는 규칙 (Naming Convention)
 // 공통규칙
 // 1. 자바는 50여가지의 예약어(keyword)가 있고 해당 예약어에는
@@ -45,6 +45,6 @@ package day01;
 
 
 
-public class Ex03Naming {
+public class Naming {
 
 }

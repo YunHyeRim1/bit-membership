@@ -1,13 +1,9 @@
-package day09;
+package board.viewers;
 // 학생 관리 프로그램을
 // ArrayList 를 사용하여 작성하시오. (30분까지)
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
-import day06.Student;
-import util.ArrayUtil;
-import util.ScannerUtil;
 
 public class StudentViewer02 {
     private Scanner scanner;

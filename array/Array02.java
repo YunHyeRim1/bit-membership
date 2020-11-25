@@ -1,13 +1,11 @@
-package day05;
+package array;
 
 import java.util.Scanner;
-
-import util.ScannerUtil;
 
 // 사용자로부터 점수 3개를 입력 받아서
 // 그 3개의 총점, 평균을 보여주는 프로그램
 
-public class Ex03Array02 {
+public class Array02 {
     private static final int SIZE = 3;
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

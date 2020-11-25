@@ -1,4 +1,4 @@
-package day06;
+package array;
 
 public class Student {
     private int id;

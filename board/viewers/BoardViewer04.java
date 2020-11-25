@@ -1,4 +1,4 @@
-package day09;
+package board.viewers;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -6,8 +6,6 @@ import java.util.Calendar;
 import java.util.Collections;
 import java.util.Scanner;
 
-import day07.Board;
-import util.ScannerUtil;
 // 배열대신 ArrayList를 사용한
 // 게시판 관리 프로그램
 public class BoardViewer04 {

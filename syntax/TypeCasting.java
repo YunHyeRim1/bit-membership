@@ -1,4 +1,4 @@
-package day01;
+package syntax;
 // 형변환(Type Casting)
 // 형변환이란 특정 데이터타입의 값을
 // 다른 데이터타입으로 변경하는 것을 형 변환이라고 한다.
@@ -12,7 +12,7 @@ package day01;
 //    명시적 형변환은
 //    변수 = (바꿀 타입)바꿀 값;
 //    으로 형변환이 가능하다.
-public class Ex05TypeCasting {
+public class TypeCasting {
     public static void main(String[] args) {
         byte myByte = 0;
         int myInt =10;

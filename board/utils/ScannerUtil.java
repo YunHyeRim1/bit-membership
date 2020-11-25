@@ -1,4 +1,4 @@
-package loop;
+package board.utils;
 
 import java.util.Scanner;
 

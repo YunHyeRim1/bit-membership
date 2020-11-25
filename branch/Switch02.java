@@ -1,9 +1,9 @@
-package day02;
+package branch;
 // 의도적으로 break를 생략해서 코드를 간략화하게 만들어보자
 // 사용자로부터 월을 입력 받으면 해당 월의 마지막 날이 
 // 며칠인지 보여주는 프로그램
 import java.util.Scanner;
-public class Ex20Switch02 {
+public class Switch02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("월: ");

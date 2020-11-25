@@ -1,4 +1,4 @@
-package day04;
+package loop;
 // 우리가 의도하지 않았는데 무한 루프에 들어가면
 // 문제가 되지만
 // 의도적으로 무한 루프를 만들어서
@@ -7,7 +7,7 @@ package day04;
 // 이번 프로그램에서는 무한 루프를 이용하여
 // 프로그램의 메뉴를 만드는 방법을 알아보자.
 import java.util.Scanner;
-public class Ex03Menu {
+public class Menu {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
     

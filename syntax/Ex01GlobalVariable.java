@@ -1,4 +1,4 @@
-package day08;
+package syntax;
 
 import java.util.Scanner;
 

@@ -1,6 +1,6 @@
-package day07;
+package array;
 
-public class ExClass {
+public class Class {
 /*
  *  1. 클래스
  *     클래스는 하나의 프로그램이다.

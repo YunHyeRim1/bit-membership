@@ -1,8 +1,6 @@
-package day06;
+package array;
 
 import java.util.Scanner;
-
-import util.ScannerUtil;
 
 // 정적할당일 경우
 // 만약 배열의 크기보다 많은 학생을 입력하고자 할때
@@ -11,7 +9,7 @@ import util.ScannerUtil;
 //    가장 뒷칸에 넣는 방법
 
 // 중 1번 방법을 코드로 구현한 프로그램
-public class Ex07StaticArray01 {
+public class StaticArray01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Student[] studentArray = new Student[4];

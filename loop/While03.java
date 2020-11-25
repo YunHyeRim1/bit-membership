@@ -1,4 +1,4 @@
-package day03;
+package loop;
 // 사용자로부터 점수를 입력 받아서
 // 90이상: A
 // 80~89: B
@@ -9,7 +9,7 @@ package day03;
 // 단, 사용자가 올바르지 않은 점수를 입력하면
 // 올바른 점수가 들어올 때까지 다시 입력을 받으세요.
 import java.util.Scanner;
-public class Ex17While03 {
+public class While03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("점수: ");

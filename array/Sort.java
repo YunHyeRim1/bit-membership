@@ -1,4 +1,4 @@
-package day05;
+package array;
 // 정렬
 // 배열에서 정렬하는 코드를 구현해보자.
 
@@ -10,7 +10,7 @@ package day05;
 // 1. 값이 작은 것에서 큰 순서로 오름차순 정렬
 // 2. 값이 큰 것에서 작은 순서로 내림차순 정렬
 
-public class Ex06Sort {
+public class Sort {
     public static void main(String[] args) {
         int[] intArray = new int[5];
         intArray[0] = 14;

@@ -1,4 +1,4 @@
-package day01;
+package syntax;
 // 기본형 데이터타입 01
 // 정수형
 // 정수란 나눠떨어지는 수이다. 즉 실수가 존재하지 않는 숫자들이다.
@@ -56,7 +56,7 @@ package day01;
 // 단 자바이클립스에선 우리가 정수를 적으면 자동적으로 int로 인식한다.
 
 
-public class Ex04PrimitiveType01 {
+public class PrimitiveType01 {
     public static void main(String[] args) {
         //byte myByte = 150;
         //위코드는 바이트의 범위보다 큰 숫자를 할당했기 때문에

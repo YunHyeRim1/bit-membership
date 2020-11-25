@@ -1,18 +1,14 @@
-package viewer;
+package board.viewers;
 
 import java.util.Scanner;
 
-import controller.UserController;
-import dto.UserDTO;
-import util.ScannerUtil;
-
 public class UserViewer {
     private Scanner scanner;
-    private UserController userController;
+    private MemberController userController;
     
     public UserViewer() {
         scanner = new Scanner(System.in);
-        userController = new UserController();
+        userController = new MemberController();
     }
     
     // 1. 메뉴 출력 메소드

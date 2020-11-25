@@ -1,10 +1,8 @@
-package day06;
+package array;
 // 배열의 동적할당
 // 배열의 동적할당이란,
 // 현재 배열은 처음에 크기를 지정해놓고
 // 그 크기만큼 사용하는 "정적할당" 이다.
-
-import util.ArrayUtil;
 
 // 정적할당의 경우, 크기를 직접 지정해놓았기 때문에
 // 사용하지 않는 칸이든 사용한 칸이든
@@ -30,7 +28,7 @@ import util.ArrayUtil;
 // 이렇게 크기가 자유로운 배열을 동적할당한다 라고 한다.
 
 
-public class Ex06DynamicAlloc {
+public class DynamicAlloc {
     public static void main(String[] args) {
         int[] array = new int[0];
         

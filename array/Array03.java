@@ -1,8 +1,6 @@
-package day05;
+package array;
 
 import java.util.Scanner;
-
-import util.ScannerUtil;
 
 // 사용자로부터
 // 국영수 점수를 입력 받아
@@ -27,7 +25,7 @@ import util.ScannerUtil;
 // 로 묶어서
 // 국어 점수 배열, 영어 점수 배열, 수학 점수 배열
 // 3개의 배열로 컨트롤 하는 프로그램
-public class Ex04Array03 {
+public class Array03 {
     private final static int SCORE_MAX = 100;
     private final static int SIZE = 3;
     public static void main(String[] args) {

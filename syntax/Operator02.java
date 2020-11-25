@@ -1,11 +1,11 @@
-package day01;
+package syntax;
 // 할당연산자
 // 할당연산자의 경우
 // 그 뒤에 나오는 값을 연산하여
 // 앞의 변수 혹은 상수에 할당한다.
 
 // =, +=, -=, *=, /=, %=
-public class Ex11Operator02 {
+public class Operator02 {
     public static void main(String[] args) {
         int number;
         

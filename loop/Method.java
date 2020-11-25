@@ -1,6 +1,6 @@
-package day04;
+package loop;
 
-public class Ex07Method {
+public class Method {
     /*
      *  메소드
      *  메소드란, 자바에서 해당 클래스가 가지고 있는 기능을 뜻한다.

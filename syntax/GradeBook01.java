@@ -1,4 +1,4 @@
-package day02;
+package syntax;
 
 import java.util.Scanner;
 
@@ -11,7 +11,7 @@ import java.util.Scanner;
 // 총점: 239점 평균: 79.67점
 // 이렇게 출력되도록 프로그램을 작성해보세요(15분)
 import java.util.Scanner;
-public class Ex07GradeBook01 {
+public class GradeBook01 {
     static final int SUBJECT_SIZE = 3;
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

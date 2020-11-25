@@ -1,13 +1,11 @@
-package day05;
+package array;
 
 import java.util.Random;
-
-import util.ArrayUtil;
 
 // 로또 번호 제작기 2번
 // 중복 체크를 다르게 해보자
 
-public class Ex09LottoNumbers2 {
+public class LottoNumbers2 {
     private static final int SIZE = 6;
     private static final int MAX = 45;
     public static void main(String[] args) {

@@ -1,12 +1,10 @@
-package day06;
+package array;
 
 import java.util.Random;
 
-import util.ArrayUtil;
-
 // 동적할당을 이용한 로또 번호 추첨기
 
-public class Ex09LottoNumbers {
+public class LottoNumbers3 {
     private static final int SIZE = 6;
     private static final int MAX = 45;
     public static void main(String[] args) {

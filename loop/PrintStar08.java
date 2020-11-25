@@ -1,7 +1,7 @@
-package day03;
+package loop;
 // 별찍기 8번
 import java.util.Scanner;
-public class Ex12PrintStar08 {
+public class PrintStar08 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("--------");

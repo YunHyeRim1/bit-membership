@@ -1,14 +1,8 @@
-package day08;
-// 학생 뷰어를
-// 필드 안에
-// 스캐너와 배열을 활용해서
+package board.viewers;
+// 학생 뷰어를 필드 안에 스캐너와 배열을 활용해서
 // BoardViewer처럼 만들어보세요. (점심식사 전까지)
 
 import java.util.Scanner;
-
-import day06.Student;
-import util.ArrayUtil;
-import util.ScannerUtil;
 
 public class StudentViewer {
     // 입력을 담당해줄 Scanner 필드

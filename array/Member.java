@@ -1,4 +1,4 @@
-package day09;
+package array;
 
 // 게시판 관리등에서 
 // 로그인하는 회원을 담당할 Member 클래스

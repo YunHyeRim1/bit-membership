@@ -3,7 +3,7 @@ package branch;
 // if - else if - else if .... - else 구조로 만들어줄 수 있다.
 // 제일 위에서부터 조건식이 false가 나오면
 // 그 다음 조건식을 체크해서 true가 나오는 첫 번째 else if만 실행이 된다.
-public class Ex15IfElseIf01 {
+public class IfElseIf01 {
     public static void main(String[] args) {
         int age = 8;
         if(age <= 5) {

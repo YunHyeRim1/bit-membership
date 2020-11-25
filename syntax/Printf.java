@@ -1,4 +1,4 @@
-package day02;
+package syntax;
 // printf
 // printf는
 // 출력할 내용에 % 문자를 사용하여
@@ -10,7 +10,7 @@ package day02;
 // 두 글자지만 하나의 문자로 취급된다.
 // \t: 스페이스 4개 분량의 탭 공백
 // \n: 다음줄을 뜻하는 개행문자
-public class Ex05Printf {
+public class Printf {
     public static void main(String[] args) {
         //1. 10진법 정수 ('d'ecimal)
         int number = 34;

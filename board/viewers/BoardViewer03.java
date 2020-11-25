@@ -1,12 +1,8 @@
-package day08;
+package board.viewers;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Scanner;
-
-import day07.Board;
-import util.ArrayUtil;
-import util.ScannerUtil;
 
 // 글을 작성하거나 수정할 때 날짜가 자동으로 입력되는 버전
 

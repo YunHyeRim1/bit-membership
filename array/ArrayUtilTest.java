@@ -1,8 +1,6 @@
-package day05;
+package array;
 
-import util.ArrayUtil;
-
-public class Ex07ArrayUtilTest {
+public class ArrayUtilTest {
     public static void main(String[] args) {
         // 배열을 초기화할 때
         // 2가지 방법이 있는데

@@ -1,4 +1,4 @@
-package day02;
+package branch;
 // 제어문
 // 제어문이란 특정 코드가 실행될지 혹은 반복될지를 결정하는 특수한 코드이다.
 // 제어문에는 조건문과 반복문이 있다.
@@ -19,7 +19,7 @@ package day02;
 // 유효범위가 끝나면 해당 변수는 사라진 걸로 취급돼서 호출할 수도 없다.
 
 
-public class Ex10If {
+public class If {
     public static void main(String[] args) {
         int number = 3;
         if(number < 10) {

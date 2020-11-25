@@ -1,13 +1,9 @@
-package viewer;
+package board.viewers;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Scanner;
-
-import controller.ReplyController;
-import dto.ReplyDTO;
-import util.ScannerUtil;
 
 public class ReplyViewer {
     private ReplyController controller;

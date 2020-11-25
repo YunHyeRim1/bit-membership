@@ -1,8 +1,6 @@
-package day05;
+package array;
 
 import java.util.Scanner;
-
-import util.ScannerUtil;
 
 // 사용자로부터 숫자를 입력 받아서
 // 1회차 국영수
@@ -10,7 +8,7 @@ import util.ScannerUtil;
 // 3회차 국영수
 // 4회차 국영수
 // 를 입력하는 2차원 배열 프로그램
-public class Ex12GradeBook01 {
+public class GradeBook01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         

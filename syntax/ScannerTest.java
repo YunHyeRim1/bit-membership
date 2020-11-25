@@ -1,10 +1,10 @@
-package day02;
+package syntax;
 // Scanner
 // 자바에서 콘솔에서의 입력은 Scanner가 담당하게 된다.
 // 단 Scanner는 클래스이고 우리 패키지에 존재하지 않기 때문에
 // import 라는 키워드를 이용해서 불러와야 한다.
 import java.util.Scanner;
-public class Ex06Scanner {
+public class ScannerTest {
     public static void main(String[] agrs) {
         Scanner scanner = new Scanner(System.in);
         

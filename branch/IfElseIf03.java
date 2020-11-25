@@ -1,9 +1,9 @@
-package day02;
+package branch;
 // 사용자로부터
 // 성별 나이 신체등급을 입력 받아
 // 현역, 공익, 면제, 그리고 의무가 없습니다. 가 출력되는 프로그램
 import java.util.Scanner;
-public class Ex17IfElseIf03 {
+public class IfElseIf03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // 성별을 입력 받는다.

@@ -1,11 +1,9 @@
-package day06;
+package array;
 
 import java.util.Scanner;
 
-import util.ScannerUtil;
-
 // Student 데이터타입에 직접 값을 넣고 출력하는 프로그램을 작성해보자. (5분)
-public class Ex04Struct01 {
+public class Struct01 {
     public static void main(String[] args) {
         Student s = new Student();
         Scanner scanner = new Scanner(System.in);

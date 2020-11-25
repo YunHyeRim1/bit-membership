@@ -1,14 +1,12 @@
-package day06;
+package array;
 
 import java.util.Scanner;
-
-import util.ScannerUtil;
 
 // 구조체를 배열로 만드는 것은 가능하다.
 // 기존 기본형 데이터타입 배열처럼
 // 데이터타입[] 배열 이름 = new 데이터타입[크기]로 선언하여
 // 각 칸을 초기화하면 사용 가능하다.
-public class Ex05StructArray01 {
+public class StructArray01 {
     public static void main(String[] args) {
         Student[] studentArray = new Student[5];
         Scanner scanner = new Scanner(System.in);

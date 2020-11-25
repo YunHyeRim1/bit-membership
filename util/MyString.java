@@ -1,9 +1,9 @@
-package day08;
+package util;
 // String 클래스는
 // String 클래스는 여러개의 문자가 담긴
 // char[] 을 다루는 클래스로서
 // 문자와 관련된 다양한 메소드들이 준비되어 있다.
-public class Ex02String {
+public class MyString {
     public static void main(String[] args) {
         // String 을 초기화하는 3가지 방법
         // 1. 기본 생성자 호출

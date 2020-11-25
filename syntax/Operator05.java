@@ -1,4 +1,4 @@
-package day02;
+package syntax;
 // 비트연산자
 // 비트연산자는 정수를 비트로 변환해서
 // 해당 자리에 대한 연산을 한다.
@@ -12,7 +12,7 @@ package day02;
 // >>: 지정된 숫자만큼 오른쪽으로 비트를 이동하되 부호는 유지한다.
 // >>>: 지정된 숫자만큼 오른쪽으로 비트를 이동하되 무조건 +가 되도록 한다.
 
-public class Ex03Operator05 {
+public class Operator05 {
     public static void main(String[] args) {
         byte myByte1 = 25;
         // 0001 1001

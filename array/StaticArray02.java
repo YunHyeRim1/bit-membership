@@ -1,8 +1,6 @@
-package day06;
+package array;
 
 import java.util.Scanner;
-
-import util.ScannerUtil;
 
 // 만약 모든 칸이 다 차있을 경우,
 // 0번칸에 1번
@@ -12,7 +10,7 @@ import util.ScannerUtil;
 // 3번칸에 새로운 학생의 정보를 입력하도록
 // 만들어보자
 
-public class Ex08StaticArray02 {
+public class StaticArray02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Student[] studentArray = new Student[4];

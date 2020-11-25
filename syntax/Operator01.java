@@ -1,10 +1,10 @@
-package day01;
+package syntax;
 // 연산자
 // 연산자란 수학적 기호에 프로그래밍적 기능이 정의되어있어서
 // 우리가 특정 기호를 쓰면 내부적으로 해당 기능이 실행되는것을 뜻한다.
 // 연산자에는
 // 산술, 할당, 비교, 논리, 비트 5가지 연산자가 존재한다.
-public class Ex10Operator01 {
+public class Operator01 {
     public static void main(String[] args) {
         // 산술 연산자란, 간단한 4칙연산 + 나머지를 구해주는 연산자이다.
         

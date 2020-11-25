@@ -1,13 +1,11 @@
-package day04;
+package loop;
 
 import java.util.Scanner;
-
-import util.ScannerUtil;
 
 //ScannerUtil 을 사용하여
 //코드가 좀더 간단해진 형태의 
 //성적관리 프로그램
-public class Ex11GradeBook02 {
+public class GradeBook02 {
     static final int SUBJECT_SIZE = 3;
 
     public static void main(String[] args) {

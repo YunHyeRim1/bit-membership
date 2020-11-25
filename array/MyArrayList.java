@@ -1,4 +1,4 @@
-package day09;
+package array;
 
 import java.util.ArrayList;
 
@@ -7,7 +7,7 @@ import java.util.ArrayList;
 // 동적할당 개념이 적용된 배열을 클래스화 시킨 것으로
 // 클래스를 만들고 어레이리스트를 이용하면
 // 별도의 동적할당 메소드 구현 없이도 동적할당을 사용할 수 있다.
-public class Ex01ArrayList {
+public class MyArrayList {
     public static void main(String[] args) {
         // ArrayList는 처음 선언할 때
         // 무엇의 모음인지를 지정해야 한다.

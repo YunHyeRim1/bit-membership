@@ -1,4 +1,4 @@
-package day04;
+package loop;
 // 사용자로부터 번호 이름 국어 영어 수학 점수를 입력 받아서
 // 번호: ##번 이름:###
 // 국어: 0##점 영어: 0##점 수학:0##점
@@ -8,7 +8,7 @@ package day04;
 // 사용자가 잘못된 점수를 입력하면
 // 올바른 점수가 들어올 때까지 다시 입력을 받으시오! (50분까지)
 import java.util.Scanner;
-public class EX01While01 {
+public class While04 {
     static final int SUBJECT_SIZE = 3;
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

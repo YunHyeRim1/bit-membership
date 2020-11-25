@@ -1,4 +1,4 @@
-package day01;
+package syntax;
 // 주석(Comment)
 // 주석이란 우리가 무언가 적어놓지만
 // 실제 코드를 기계어로 바꾸는 과정인 컴파일에선 무시가 되는 줄들을
@@ -14,6 +14,6 @@ package day01;
 
 // 주석을 사용하는 이유는 우리가 해당 코드를 적은 목적에 대한 설명을 적기 위함이다.
 // 코드가 복잡해지면 해당 코드에 대한 설명을 우리가 주석으로 적게 된다.
-public class Ex01Comment {
+public class Comment {
 
 }

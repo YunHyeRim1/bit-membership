@@ -1,4 +1,4 @@
-package day04;
+package loop;
 // 숫자 맞추기 게임
 // 컴퓨터가 임의로 만든 숫자(=난수)를
 // 사용자가 알아맞추는 게임.
@@ -15,7 +15,7 @@ import java.util.Random;
 // 입력을 담당하는 Scanner 클래스를 import 해주자
 import java.util.Scanner;
 
-public class Ex05GuessingGame {
+public class GuessingGame {
     final static int MAX = 100;
     public static void main(String[] args) {
         // 스캐너 클래스 변수를 만들어주자

@@ -1,20 +1,20 @@
-package day09;
+package board.domains;
 
 // 게시판 관리등에서 
 // 로그인하는 회원을 담당할 Member 클래스
-public class Member {
+public class MemberDTO {
     // 필드
-    private int id; // 회원 번호
+    private int userId; // 회원 번호
     private String userName; // 로그인 id
     private String password; // 로그인 비밀번호
     private String nickName; // 게시판에서 보여지는 닉네임
     
     // getters/setters
     public int getId() {
-        return id;
+        return userId;
     }
     public void setId(int id) {
-        this.id = id;
+        this.userId = userId;
     }
     public String getUserName() {
         return userName;
@@ -37,8 +37,8 @@ public class Member {
     
     //j ava.lang.Object 메소드 오버라이드
     public boolean equals(Object o) {
-        if(o instanceof Member) {
-            Member m = (Member)o;
+        if(o instanceof MemberDTO) {
+            MemberDTO m = (MemberDTO)o;
             if(userName.equals(m.userName) && password.equals(m.password)) {
                 return true;
             }
@@ -48,21 +48,21 @@ public class Member {
     }
     
     public String toString() {
-        return "id: "+id+
+        return "id: "+userId+
                 ", userName: "+userName+
                 ", password: "+password+
                 ", nickName: "+nickName;
     }
     
     // 생성자
-    public Member() {
+    public MemberDTO() {
         userName = new String();
         password = new String();
         nickName = new String();
     }
     
-    public Member(int id, String userName, String password, String nickName) {
-        this.id = id;
+    public MemberDTO(int userId, String userName, String password, String nickName) {
+        this.userId = userId;
         this.userName = userName;
         this.password = password;
         this.nickName = nickName;

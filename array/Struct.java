@@ -1,4 +1,4 @@
-package day06;
+package array;
 // 구조체(Struct)
 // 구조체란
 // 다양한 데이터타입을 필요한 하나의 커다란 데이터타입으로 만들어주는 것이다.
@@ -9,7 +9,7 @@ package day06;
 // 자동차 라는 자료형을 만들어줄 수 있다.
 // 단, 구조체는 2세대 언어에서까지만 사용됐다.
 // 하지만 자바에서도 구조체를 비슷하게 만들 수 있다.
-public class Ex03Struct {
+public class Struct {
     public static void main(String[] args) {
         // 미리 만들어놓은 Student 클래스는
         // 하나의 자료형이 될 수 있다.

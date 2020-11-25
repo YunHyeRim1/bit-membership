@@ -1,4 +1,4 @@
-package day07;
+package array;
 
 import java.util.Calendar;
 
