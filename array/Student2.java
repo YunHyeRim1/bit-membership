@@ -1,10 +1,7 @@
 package array;
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 public class Student2 {
     public static void main(String[] args) {
         // 객체 선언은 다음과 같이 한다

@@ -1,10 +1,6 @@
 package syntax;
 // 할당연산자
-<<<<<<< HEAD
 // 할당연산자의 경우 
-=======
-// 할당연산자의 경우
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 // 그 뒤에 나오는 값을 연산하여
 // 앞의 변수 혹은 상수에 할당한다.
 
@@ -37,7 +33,6 @@ public class Operator02 {
         number %= 5;
         System.out.println("number의 현재값: "+number);
     }
-<<<<<<< HEAD
 }
 
 
@@ -52,7 +47,3 @@ public class Operator02 {
 
 
 
-=======
-
-}
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e

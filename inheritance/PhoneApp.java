@@ -2,42 +2,25 @@ package inheritance;
 
 import java.util.Scanner;
 
-<<<<<<< HEAD
 public class PhoneApp {
 	public static void main(String[] args) {
 		
-=======
-public class PhoneApp{
-	public static void main(String[] args) {
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 		Scanner scanner = new Scanner(System.in);
 		Phone phone = null;
 		CelPhone celPhone = null;
 		IPhone iPhone = null;
 		GalPhone galPhone = null;
 		Phone[] arr = new Phone[1];
-<<<<<<< HEAD
 		while (true) {
 			System.out.println("메뉴: 0.Exit 1.집전화걸기 2.전화받기 " + "3.휴대폰걸기 4.아이폰서치 5.삼성페이결제");
 			switch (scanner.next()) {
 			case "1":
-=======
-		
-		while(true) {
-			System.out.println("메뉴: 0.Exit 1.집전화걸기 2.전화받기 3.휴대폰걸기 4.아이폰서치 5.삼성페이결제");
-			switch(scanner.next()) {
-			case "1":	
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 				phone = new Phone();
 				phone.setKind("집전화");
 				phone.setCompany("금성사");
 				phone.setCall("안녕하세요");
 				arr[0] = phone;
-<<<<<<< HEAD
  				break;
-=======
-				break;
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 			case "2":
 				System.out.println(arr[0].toString());
 				break;
@@ -46,43 +29,26 @@ public class PhoneApp{
 				celPhone.setCompany("노키아");
 				celPhone.setPortable(true);
 				celPhone.setCall("통화하고 있다");
-<<<<<<< HEAD
 				celPhone.setMove("이동중에");
 				arr[0] = celPhone;
-=======
-				celPhone.setMove("이동 중에");
-				arr[0] = iPhone;
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 				break;
 			case "4":
 				iPhone = new IPhone();
 				iPhone.setCompany("애플");
 				iPhone.setPortable(true);
-<<<<<<< HEAD
 				iPhone.setSearch("뉴스검색");
 				iPhone.setMove("이동중에");
-=======
-				iPhone.setSearch("뉴스 검색");
-				iPhone.setMove("이동 중에");
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 				arr[0] = iPhone;
 				break;
 			case "5":
 				galPhone = new GalPhone();
 				galPhone.setCompany("삼성");
 				galPhone.setPortable(true);
-<<<<<<< HEAD
 				galPhone.setPay("삼성페이결제");
 				galPhone.setMove("이동중에");
 				arr[0] = galPhone;
 				break;
 
-=======
-				galPhone.setPay("삼성페이 결제");
-				galPhone.setMove("이동 중에");
-				arr[0] = galPhone;
-				break;
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 			case "0":
 				return;
 			}
@@ -92,7 +58,6 @@ public class PhoneApp{
 
 class Phone {
 	protected String kind, company, call;
-<<<<<<< HEAD
 
 	// 전화기종류, 제조사, 통화내역
 	public String getKind() {
@@ -125,26 +90,10 @@ class Phone {
 	}
 }
 
-=======
-	// 전화기 종류, 제조사, 통화내역
-	public String getKind() {return kind;}
-	public void setKind(String kind) {this.kind = kind;}
-	public String getCompany() {return company;}
-	public void setCompany(String company) {this.company = company;}
-	public String getCall() {return call;}
-	public void setCall(String call) {this.call = call;}
-	
-	@Override
-	public String toString() {
-		return "집전화기 [폰종류=" + kind + ", 제조사=" + company + ", 통화내역=" + call + "]";
-	} 
-}
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 class CelPhone extends Phone {
 	public final static String KIND = "휴대폰";
 	protected boolean portable;
 	protected String move;
-<<<<<<< HEAD
 
 	public boolean isPortable() {
 		return portable;
@@ -201,40 +150,5 @@ class GalPhone extends IPhone {
 	@Override
 	public String toString() {
 		return String.format("%s 갤럭시 제품을 사용해서, %s중에  %s 한다", KIND, company, move, pay);
-=======
-	
-	public boolean isPortable() {return portable;}
-	public void setPortable(boolean portable) {this.portable = portable;}
-	public String getMove() {return move;}
-	public void setMove(String move) {this.move = move;}
-	
-	@Override
-	public String toString() {
-		return String.format("%s 인 %s 제품을 사용해서 %s 라고 %s 통화한다",
-				KIND, company, call, move);
-	}
-}
-class IPhone extends CelPhone {
-	public final static String KIND = "아이폰";
-	protected String search;
-	public String getSearch() {return search;}
-	public void setSearch(String search) {this.search = search;}
-	
-	@Override
-	public String toString() {
-		return String.format("%s 아이폰을 사용해서 %s중에 %s 을 한다",
-				KIND, company, move, search);
-	}
-}
-class GalPhone extends IPhone {
-	protected String pay;
-	public String getPay() {return pay;}
-	public void setPay(String pay) {this.pay = pay;}
-	
-	@Override
-	public String toString() {
-		return String.format("%s 갤럭시 제품을 사용해서, %s중에  %s 한다",
-				KIND, company, move, pay);
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 	}
 }

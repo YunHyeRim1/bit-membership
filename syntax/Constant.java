@@ -8,11 +8,7 @@ public class Constant {
         int myNumber = 30;
         System.out.println("myNumber의 현재값: "+myNumber);
         final int MY_NUMBER = 20;
-<<<<<<< HEAD
         System.out.println("MY_NUMBER의 현재값: "+MY_NUMBER);
-=======
-        System.out.println("MY_NUMBER의 현재값: "+myNumber);
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
         myNumber = 40;
         System.out.println("myNumber의 현재값: "+myNumber);
         
@@ -22,11 +18,6 @@ public class Constant {
         
         //상수는 우리가 하드코딩을 피하기 위해서
         //적극적으로 사용을 해야한다.
-<<<<<<< HEAD
         
     }
 }
-=======
-        }
-    }
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e

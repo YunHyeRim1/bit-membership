@@ -1,10 +1,4 @@
 package syntax;
-<<<<<<< HEAD
-=======
-
-import java.util.Scanner;
-
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 // 사용자로부터
 // 번호 이름
 // 국어 영어 수학
@@ -35,11 +29,7 @@ public class GradeBook01 {
         System.out.print("수학: ");
         int math = scanner.nextInt();
         
-<<<<<<< HEAD
         //총점과 평균
-=======
-        // 총점과 평균
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
         int sum = korean + english + math;
         // double average = sum / 3.0;
         // 매직 넘버(마술의 숫자)
@@ -50,7 +40,6 @@ public class GradeBook01 {
         // 코드의 변경을 어렵게 만든다.
         
         // 하드코딩 vs 소프트코딩
-<<<<<<< HEAD
         // 하드코딩이란 '경직된' 코딩으로써
         // 변경이 어려운 코드를 만드는 것을 하드코딩이라고 한다.
         // 하드코딩의 장점은 코드를 쉽게 만들수 있다 와 굳이 변수명이나 상수명을 
@@ -59,44 +48,25 @@ public class GradeBook01 {
         // 소프트코딩은 '유연한' 코딩으로써
         // 변경이 쉬운 코드를 만드는것을 소프트 코딩이라고 한다.
         // 소프트코딩은 비록 처음 만들때는 어렵지만 
-=======
-        // 하드코딩이란 '경직된' 코딩으로서
-        // 변경이 어려운 코드를 만드는 것을 하드코딩이라고 한다.
-        // 하드코딩의 장점은 코드를 쉽게 만들 수 있다 와 굳이 변수명이나 상수명을
-        // 안 만들어도 된다라는 장점이 있지만 경직되었기 때문에 코드 변경은 오히려 어렵다.
-        
-        // 소프트코딩은 '유연한' 코딩으로서
-        // 변경이 쉬운 코드를 만드는 것을 소프트 코딩이라고 한다.
-        // 소프트코딩은 비록 처음 만들 때는 어렵지만
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
         // 유지보수가 쉬워진다는 장점이 있다.
         
         // 그렇다면 위의
         // double average = sum / 3.0;
         // 을 소프트코딩하면 어떻게 될까?
         // 3을 가지고 있는 상수를 만들고
-<<<<<<< HEAD
         // double average = sum / (double)과목수 요런식으로 만들어주어야 한다.
-=======
-        // double average = sum / (double)과목수 이런 식으로 만들어줘야 한다.
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
         
         double average = sum / (double)SUBJECT_SIZE;
         
         // 정보 출력
         System.out.printf("번호: %d번 이름: %s\n", id, name);
-<<<<<<< HEAD
         System.out.printf("국어: %03d점 영어: %03d점 수학: %03d점\n", 
                 korean, english, math);
-=======
-        System.out.printf("국어: %03d점 영어: %03d점 수학: %03d점\n", korean, english, math);
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
         System.out.printf("총점: %03d점 평균: %.2f점\n", sum, average);
         
         scanner.close();
     }
 }
-<<<<<<< HEAD
 
 
 
@@ -106,5 +76,3 @@ public class GradeBook01 {
 
 
 
-=======
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e

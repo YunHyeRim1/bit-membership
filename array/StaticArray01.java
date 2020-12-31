@@ -2,10 +2,7 @@ package array;
 
 import java.util.Scanner;
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 // 정적할당일 경우
 // 만약 배열의 크기보다 많은 학생을 입력하고자 할때
 // 1. 더이상 입력할 수 없습니다
@@ -70,7 +67,6 @@ public class StaticArray01 {
                     studentArray[index] = new Student();
                     //해당칸에 학생 정보 입력
                     System.out.print("번호: ");
-<<<<<<< HEAD
                     /*
                     studentArray[index].id = scanner.nextInt();
                     
@@ -83,25 +79,12 @@ public class StaticArray01 {
                     
                     studentArray[index].math = ScannerUtil.nextInt(scanner, "수학: ", 0, 100);   
                     */
-=======
-                    studentArray[index].setId(scanner.nextInt());
-                    
-                    System.out.print("이름: ");
-                    studentArray[index].setName(ScannerUtil.nextLine(scanner));
-
-                    studentArray[index].setKorean(ScannerUtil.nextInt(scanner, "국어: ", 0, 100));
-
-                    studentArray[index].setEnglish(ScannerUtil.nextInt(scanner, "영어: ", 0, 100));
-
-                    studentArray[index].setMath(ScannerUtil.nextInt(scanner, "수학: ", 0, 100));
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
                 }
             }else if(userChoice == 2) {
                 //for문을 사용해서
                 //해당칸이 null 이 아니면 출력
                 for(int i = 0; i < studentArray.length; i++) {
                     if(studentArray[i] != null) {
-<<<<<<< HEAD
                         /*
                         int id = studentArray[i].id;
                         String name = studentArray[i].name;
@@ -115,19 +98,6 @@ public class StaticArray01 {
                                 korean, english, math);
                         System.out.printf("총점: %03d점 평균: %.2f점\n", sum, average);
                         */
-=======
-                        int id = studentArray[i].getId();
-                        String name = studentArray[i].getName();
-                        int korean = studentArray[i].getKorean();
-                        int english = studentArray[i].getEnglish();
-                        int math = studentArray[i].getMath();
-                        int sum = korean + english + math;
-                        double average = sum / 3.0;
-                        System.out.printf("번호: %d번 이름: %s\n", id, name);
-                        System.out.printf("국어: %03d점 영어: %03d점 수학: %03d점\n", korean, english, math);
-                        System.out.printf("총점: %03d점 평균: %.2f점\n", sum, average);
-                        
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
                     }
                 }
             }else if(userChoice == 3) {

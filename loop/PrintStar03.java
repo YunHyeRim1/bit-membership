@@ -12,19 +12,11 @@ public class PrintStar03 {
         int userNumber = scanner.nextInt();
         for(int i = 1; i <= userNumber; i++) {
             String stars = new String();
-<<<<<<< HEAD
             //공백을 담당하는 j for 문
             for(int j = 1; j <= userNumber - i; j++) {
                 stars += " ";
             }
             //별을 담당하는 j for 문
-=======
-            // 공백을 담당하는 j for 문
-            for(int j = 1; j <= userNumber - i; j++) {
-                stars += " ";
-            }    
-            // 별을 담당하는 j for 문
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
             for(int j = 1; j <= i; j++) {
                 stars += "*";
             }
@@ -35,7 +27,6 @@ public class PrintStar03 {
         scanner.close();
     }
 }
-<<<<<<< HEAD
 
 
 
@@ -45,5 +36,3 @@ public class PrintStar03 {
 
 
 
-=======
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e

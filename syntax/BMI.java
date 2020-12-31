@@ -13,17 +13,9 @@ public class BMI {
         System.out.print("키: ");
         double height = scanner.nextDouble();
         
-<<<<<<< HEAD
         double bmi = weight / height /height;
-=======
-        double bmi = weight / height / height;
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
         System.out.printf("bmi 수치는: %.2f입니다.\n", bmi);
         
         scanner.close();
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 }

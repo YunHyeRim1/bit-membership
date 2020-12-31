@@ -17,11 +17,7 @@ public class GradeBook02 {
         int math = 0;
         while (true) {
             System.out.println("1. 입력 2. 출력 3. 종료");
-<<<<<<< HEAD
             int userChoice = ScannerUtil.nextInt(scanner,"국어: ",  1, 3);
-=======
-            int userChoice = ScannerUtil.nextInt(scanner);
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
             if (userChoice == 1) {
                 System.out.print("번호: ");
                 id = scanner.nextInt();

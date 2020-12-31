@@ -1,29 +1,16 @@
 package board.domains;
 
-import java.util.Calendar;
-
-public class ReplyDTO {
+public class ReplyDto extends ArticleDto{
     private int replyId;
     
-    public int getreplyId() {
+    
+    public int getReplyId() {
         return replyId;
     }
-    public void setreplyId(int replyId) {
+    public void setReplyId(int replyId) {
         this.replyId = replyId;
     }
-   
-    /* 
-    public boolean equals(Object o) {
-        if(o instanceof ReplyDTO) {
-            ReplyDTO r = (ReplyDTO)o;
-            if(id == r.id) {
-                return true;
-            }
-        }
-        
-        return false;
-    }
-     */
+  
 }
 
 

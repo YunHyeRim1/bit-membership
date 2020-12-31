@@ -2,10 +2,7 @@ package array;
 
 import java.util.Scanner;
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 // 만약 모든 칸이 다 차있을 경우,
 // 0번칸에 1번
 // 1번칸에 2번

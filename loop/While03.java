@@ -1,9 +1,5 @@
 package loop;
-<<<<<<< HEAD
 // 사용자로부터 점수를 입력받아서
-=======
-// 사용자로부터 점수를 입력 받아서
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 // 90이상: A
 // 80~89: B
 // 70~79: C
@@ -11,32 +7,19 @@ package loop;
 // 그외: F
 // 가 출력되는 프로그램을 작성하시오.
 // 단, 사용자가 올바르지 않은 점수를 입력하면
-<<<<<<< HEAD
 // 올바른 점수가 들어올때 까지 다시 입력을 받으세요.
 import java.util.Scanner;
 
 
-=======
-// 올바른 점수가 들어올 때까지 다시 입력을 받으세요.
-import java.util.Scanner;
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 public class While03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("점수: ");
-<<<<<<< HEAD
         int score= scanner.nextInt();
         
         while(score < 0 || score > 100) {
             System.out.println("잘못된 점수입니다.");
             System.out.print("점수: ");
-=======
-        int score = scanner.nextInt();
-        
-        while(score < 0 || score > 100) {
-            System.out.println("잘못된 점수입니다.");
-            System.out.println("점수: ");
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
             score = scanner.nextInt();
         }
         
@@ -54,7 +37,6 @@ public class While03 {
         
         
         
-<<<<<<< HEAD
         
         scanner.close();
     }
@@ -75,8 +57,3 @@ public class While03 {
 
 
 
-=======
-        scanner.close();
-    }
-}
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e

@@ -2,11 +2,7 @@ package syntax;
 // 연산자
 // 연산자란 수학적 기호에 프로그래밍적 기능이 정의되어있어서
 // 우리가 특정 기호를 쓰면 내부적으로 해당 기능이 실행되는것을 뜻한다.
-<<<<<<< HEAD
 // 연산자에는 
-=======
-// 연산자에는
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 // 산술, 할당, 비교, 논리, 비트 5가지 연산자가 존재한다.
 public class Operator01 {
     public static void main(String[] args) {
@@ -27,11 +23,7 @@ public class Operator01 {
         
         System.out.println("myNumber1 % myNumber2: "+(myNumber1 % myNumber2));
         
-<<<<<<< HEAD
         //하지만 산술연산의 경우 한쪽이 실수이면 
-=======
-        //하지만 산술연산의 경우 한쪽이 실수이면
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
         //결과값도 실수가 된다.
         System.out.println("myNumber1 + myNumber2: "+((double)myNumber1 + myNumber2));
         System.out.println("myNumber1 - myNumber2: "+((double)myNumber1 - myNumber2));
@@ -51,11 +43,7 @@ public class Operator01 {
         //즉 0이란 결과값을
         //실수로 바꾸면?
         //0.0이 되기 때문이다.
-<<<<<<< HEAD
   
-=======
-        
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
         
         //String이란?
         //스트링 이란 여러개의 문자를 모아둔 문자열을 관리하는 클래스 이다.
@@ -75,21 +63,13 @@ public class Operator01 {
         System.out.println("123"+456);
         
         //증감연산자
-<<<<<<< HEAD
         //산술연산자중에서 특이하게 ++, 혹은 -- 로 적는 경우가 있는데
-=======
-        //산술연산자 중에서 특이하게 ++, 혹은 -- 로 적는 경우가 있는데
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
         //이때에는 현재 변수의 값을 1씩 증가시키거나 감소시키거나 하라는 의미가 된다.
         //단 ++ 혹은 --가 앞에 붙냐 뒤에붙냐에 따라서 의미가 달라지게 된다.
         System.out.println("myNumber1의 현재값: "+myNumber1);
         System.out.println("++myNumber1: "+ ++myNumber1);
         //위 코드는 다음과 같은 순서를 가지게 된다.
-<<<<<<< HEAD
         //1. ++myNumber1이 실행되서 myNumber1의 값이 10에서 11로 변경된다.
-=======
-        //1. ++myNumber1이 실행돼서 myNumber1의 값이 10에서 11로 변경된다.
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
         //2. myNumber1의 값을 스트링으로 변환한다.
         //3. "++myNumber1: " 뒤에 스트링으로 변환된 myNumber1의 값이 이어진다.
         //4. System.out.println()이 3번의 결과값을 화면에 출력하게 된다.
@@ -103,18 +83,13 @@ public class Operator01 {
         //1. myNumber1의 값을 스트링으로 변환한다.
         //2. "myNumber1++: " 뒤에 스트링으로 변환된 myNumber1의 값이 이어진다.
         //3. System.out.println()이 2번의 결과값을 화면에 출력하게 된다.
-<<<<<<< HEAD
         //4. myNumber1++가 실행되서 myNumber1의 값이 11에서 12로 변경된다.
-=======
-        //4. myNumber1++가 실행돼서 myNumber1의 값이 11에서 12로 변경된다.
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
         System.out.println("myNumber1의 현재값: "+myNumber1);
         //이렇게 ++ 혹은 --가 뒤에 붙을 경우
         //후위증가(감소)연산자 라고 한다.
     }
 
 }
-<<<<<<< HEAD
 
 
 
@@ -129,5 +104,3 @@ public class Operator01 {
 
 
 
-=======
->>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
