@@ -4,7 +4,7 @@ package branch;
 // 단 짝수일때는 아무런 반응이 없습니다. (25분까지)
 import java.util.Scanner;
 public class If02 {
-    public static void main(String[] args) {
+    public static void main(String... args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("숫자: ");
         int number = scanner.nextInt();

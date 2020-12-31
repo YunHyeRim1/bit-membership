@@ -5,6 +5,9 @@ package branch;
 // 조건문: 조건을 체크해서 true가 나오면 특정 코드들을 실행
 // 반복문: 조건을 체크해서 true가 나오면 특정 코드들을 반복
 
+import java.util.Arrays;
+import static java.util.stream.Collectors.toList;
+
 // 조건문 - if
 // if 조건문은 ()안에 우리가 조건식을 적어주고 
 // 해당 조건식이 true가 나오면
@@ -20,38 +23,14 @@ package branch;
 
 
 public class If {
-    public static void main(String[] args) {
-        int number = 3;
-        if(number < 0) {
-            String string1 = "abc";
-            System.out.println("number: "+number);
-            System.out.println("number는 0 이하입니다.");
-            
-        }
-        
-        
-        System.out.println("프로그램 종료");
+    public static void main(String... args) {
+
+        Arrays.asList(-1).stream().forEach(i -> {
+            if(i.intValue() > 0) {
+                System.out.println("number: "+ i.intValue());
+            }else {
+                System.out.println("number는 0 이하입니다.");
+            }    
+        });
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
