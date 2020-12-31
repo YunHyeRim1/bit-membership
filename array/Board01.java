@@ -2,8 +2,11 @@ package array;
 
 import java.util.Scanner;
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 public class Board01 {
     public static void main(String[] args) {
         showMenu();

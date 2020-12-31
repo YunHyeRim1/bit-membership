@@ -2,7 +2,10 @@ package loop;
 
 import java.util.Scanner;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 public class ScannerUtilTest {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -20,7 +23,11 @@ public class ScannerUtilTest {
         
         System.out.println("int 값 범위 제한 nextInt()");
         System.out.println("국어 점수");
+<<<<<<< HEAD
         int korean = ScannerUtil.nextInt(scanner,"국어: ",  0, 100);
+=======
+        int korean = ScannerUtil.nextInt(scanner);
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
         
         System.out.println("korean: "+korean);
         

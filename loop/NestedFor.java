@@ -10,20 +10,28 @@ public class NestedFor {
             }
             System.out.println("value의 현재값: "+value);
         }
+<<<<<<< HEAD
         
+=======
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
         // 위의 중첩 for 반복문의 경우
         // 다음과 같은 반복 과정을 갖게 된다.
         // 1. int i = 1;
         // 2. i <= 3;
         // 3. int j = 11;
         // 4. j <= 14;
+<<<<<<< HEAD
         // 5. System.out.printf();
+=======
+        // 5. System.out.printf()
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
         // 6. j++
         // 7. 4->5->6 반복
         // 8. 4번이 false가 나오면 j for 문 종료
         // 9. i++
         // 10. 2번부터 9번까지 반복
         // 11. i <= 3이 false가 나오면 종료
+<<<<<<< HEAD
         
     }
 }
@@ -35,3 +43,7 @@ public class NestedFor {
 
 
 
+=======
+    }
+}
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e

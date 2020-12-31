@@ -1,6 +1,10 @@
 package branch;
 // 사용자로부터 이름, 국어, 영어, 수학 점수를 입력 받아서
+<<<<<<< HEAD
 // 총점이 210점 이상이고 모든 점수가 60점 이상이면 
+=======
+// 총점이 210점 이상이고 모든 점수가 60점 이상이면
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 // "### 학생님은 합격입니다" 가 출력되고
 // 그외에는 모두 "### 학생님은 불합격입니다" 가 출력되는
 // 프로그램을 작성하시오 (55분까지)
@@ -25,8 +29,13 @@ public class IfElse03 {
         
         //if - else 문
         int sum = korean + english + math;
+<<<<<<< HEAD
         if(sum >= SUM_STANDARD && korean >= INDIVIDUAL_STANDARD
                 && english >= INDIVIDUAL_STANDARD 
+=======
+        if(sum >= SUM_STANDARD && korean >= INDIVIDUAL_STANDARD 
+                && english >= INDIVIDUAL_STANDARD
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
                 && math >= INDIVIDUAL_STANDARD) {
             System.out.println(name+"학생님은 합격입니다.");
         }else {
@@ -36,6 +45,7 @@ public class IfElse03 {
         scanner.close();
     }
 }
+<<<<<<< HEAD
 
 
 
@@ -55,3 +65,5 @@ public class IfElse03 {
 
 
 
+=======
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e

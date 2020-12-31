@@ -1,7 +1,10 @@
 package board.utils;
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 // 배열을 사용하는데 도움이 되는 메소드를 모아둔
 // ArrayUtil 클래스
 public class ArrayUtil {
@@ -90,13 +93,18 @@ public class ArrayUtil {
     }
 
     // 사용자가 배열과 index를 넘기면
+<<<<<<< HEAD
     // 해당 배열에서 인덱스를 삭제하고
     // 그리고 크기가 줄어든 배열을 리턴하는
+=======
+    // 해당 배열에서 인덱스를 삭제하고 크기가 줄어든 배열을 리턴하는
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
     // removeByIndex 메소드
     public static int[] removeByIndex(int[] array, int index) {
         // 현재 array의 크기를 size에 저장한다.
         int size = size(array);
 
+<<<<<<< HEAD
         // 여기서 우리가 생각해볼 것은
         // index가 얼마인지에 따라서
         // 실행되는 코드가 달라져야 한다는것이다.
@@ -104,15 +112,26 @@ public class ArrayUtil {
         // 1. 아예 유효하지 않은 index
         // 이때는 우리가 파라미터로 넘어온 배열을
         // 그대로 return 해준다.
+=======
+        // index가 얼마인지에 따라서 실행되는 코드가 달라져야 한다.
+        // index는 다음과 같은 경우가 가능하다.
+        // 1. 아예 유효하지 않은 index
+        // 이때는 파라미터로 넘어온 배열을 그대로 return 해준다.
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
         if (index < 0 || index > size - 1) {
             return array;
         }
 
         // 2. 가장 앞인 index
         // A. 임시 배열을 만들어서 현재 배열의 내용을 복사하고
+<<<<<<< HEAD
         // B. 현재 배열을 현재크기 -1로 새로 초기화 하고
         // C. 임시 배열에서 i번째 인덱스를 i-1번 인덱스에 넣는 식으로
         // 복사해온다.
+=======
+        // B. 현재 배열을 현재크기 -1로 새로 초기화하고
+        // C. 임시 배열에서 i번째 인덱스를 i-1번 인덱스에 넣는 식으로 복사해온다.
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
         // D. 줄어든 배열을 리턴한다.
 
         // 3. 가장 뒤에 있는 index
@@ -121,7 +140,11 @@ public class ArrayUtil {
         // C. 임시 배열에서 가장 마지막 인덱스를 제외하고 복사한다.
         // D. 줄어든 배열을 리턴한다.
 
+<<<<<<< HEAD
         // 4. 중간에 있는 index일때
+=======
+        // 4. 중간에 있는 index일 때
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
         // A. 임시 배열을 만들어서 현재 배열의 내용을 복사하고
         // B. 현재 배열을 현재크기-1로 새로 초기화하고
         // C. 임시 배열에서 그 인덱스를 제외하고 차례대로 복사한다.
@@ -132,31 +155,54 @@ public class ArrayUtil {
         for (int i = 0; i < temp.length; i++) {
             temp[i] = array[i];
         }
+<<<<<<< HEAD
         // B. 현재 배열을 현재크기-1로 새로 초기화하고
         array = new int[size - 1];
 
         // 2. 인덱스가 0일때(즉 가장 앞을 지울때)
         if (index == 0) {
             // for문을 1부터 size보다 작을동안 반복하면서
+=======
+        // B. 현재 배열을 현재 크기 -1로 새로 초기화하고
+        array = new int[size - 1];
+
+        // 2. 인덱스가 0일 때 (가장 앞을 지울 때)
+        if (index == 0) {
+            // for문을 1부터 size보다 작을 동안 반복하면서
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
             // array[i-1]에 temp[i]를 넣어준다.
             for (int i = 1; i < size; i++) {
                 array[i - 1] = temp[i];
             }
         } else if (index == size - 1) {
+<<<<<<< HEAD
             // 3. 인데스가 size-1일때(즉 가장 뒤를 지울때)
             // for문을 0부터 size-1보다 작을동안 반복하면서
+=======
+            // 3. 인데스가 size-1일 때 (가장 뒤를 지울 때)
+            // for문을 0부터 size-1보다 작을 동안 반복하면서
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
             // array[i]에 temp[i]를 넣어준다.
             for (int i = 0; i < size - 1; i++) {
                 array[i] = temp[i];
             }
         } else {
+<<<<<<< HEAD
             // 4. 인덱스가 그외일때(즉 중간의 어딘가를 지울때)
             // 이때는 for문이 2개가 필요하다
+=======
+            // 4. 인덱스가 그 외일 때 (중간의 어딘가를 지울 때)
+            // 이때는 for문이 2개가 필요하다.
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
             // 1. 0~index전까지 복사
             for (int i = 0; i < index; i++) {
                 array[i] = temp[i];
             }
+<<<<<<< HEAD
             // index가 2일땐
+=======
+            // index가 2일 때는
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
             // 0 1 2 3 4
             // 0 1 3 4
 
@@ -170,12 +216,20 @@ public class ArrayUtil {
 
         // if - else 가 끝나면
         // array는 크기가 1 줄어든 상태로 변경되었으므로
+<<<<<<< HEAD
         // array를 리턴해주자
         return array;
     }
 
     // 해당 배열에서 특정 요소가
     // 몇번 인덱스에 있는지 확인하는
+=======
+        // array를 리턴해주자.
+        return array;
+    }
+
+    // 해당 배열에서 특정 요소가 몇 번 인덱스에 있는지 확인하는
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
     // indexOf() 메소드
     // 단 해당 배열에서 그 요소가 존재하지 않으면
     // -1을 return 한다.
@@ -196,7 +250,11 @@ public class ArrayUtil {
     }
 
     // 3시 50분까지
+<<<<<<< HEAD
     // 현재 우리가 만든 메소드들 중에서
+=======
+    // 현재 만든 메소드들 중에서
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
     // add, indexOf, removeByIndex, remove, contains를
     // String 기준으로 오버로딩해서 만들어보세요.
     public static String[] add(String[] array, String element) {
@@ -273,7 +331,10 @@ public class ArrayUtil {
         
         return false;
     }
+<<<<<<< HEAD
    
+=======
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 }
 
 
@@ -281,6 +342,7 @@ public class ArrayUtil {
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -290,3 +352,5 @@ public class ArrayUtil {
 
 
 
+=======
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e

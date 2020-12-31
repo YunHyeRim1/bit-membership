@@ -2,16 +2,22 @@ package array;
 
 import java.util.Scanner;
 
+<<<<<<< HEAD
 
 
 // 사용자로부터
 // 국영수 점수를 입력받아
+=======
+// 사용자로부터
+// 국영수 점수를 입력 받아
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 // 1~3회차의 점수와 총점 평균을 출력하는 프로그램
 // 결과가 다음과 같이 나온다.
 
 // 1번 조재영
 // ---1번 시험---
 // 국어: 080점 영어: 080점 수학: 079점
+<<<<<<< HEAD
 // 총점: 239점 평균: 79.66점
 // ------------
 // --2번 시험---
@@ -21,13 +27,26 @@ import java.util.Scanner;
 // -----------
 
 // 30분까지
+=======
+// 총점: 239점 평균:79.66점
+// ------------
+// ---2번시험---
+// ......
+//------------
+// ......
+//---3번시험---
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 
 // 국영수를
 // 국어 1회차, 2회차, 3회차
 // 영어 1회차, 2회차, 3회차
 // 수학 1회차, 2회차, 3회차
 // 로 묶어서
+<<<<<<< HEAD
 // 국어점수 배열, 영어점수 배열, 수학점수 배열
+=======
+// 국어 점수 배열, 영어 점수 배열, 수학 점수 배열
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 // 3개의 배열로 컨트롤 하는 프로그램
 public class Array03 {
     private final static int SCORE_MAX = 100;
@@ -47,6 +66,7 @@ public class Array03 {
         System.out.print("이름: ");
         name = ScannerUtil.nextLine(scanner);
         
+<<<<<<< HEAD
         //for문을 이용해서
         //각 배열의 i번째에 시험 점수를 넣어준다.
         for(int i = 0; i < SIZE; i++) {
@@ -58,6 +78,20 @@ public class Array03 {
             
             mathArray[i] = ScannerUtil.nextInt(scanner, 
                     "수학 "+(i+1)+"회차 점수: ", 0, SCORE_MAX); 
+=======
+        
+        // for 문을 이용해서
+        // 각 배열의 i번째에 시험 점수를 넣어준다.
+        for(int i = 0; i < SIZE; i++) {
+            koreanArray[i] = ScannerUtil.nextInt(scanner, 
+                    "국어 "+(i+1)+"회차 점수: ", 0, SCORE_MAX);
+       
+            englishArray[i] = ScannerUtil.nextInt(scanner, 
+                    "영어 "+(i+1)+"회차 점수: ", 0, SCORE_MAX);
+            
+            mathArray[i] = ScannerUtil.nextInt(scanner, 
+                    "수학 "+(i+1)+"회차 점수: ", 0, SCORE_MAX);
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
         }
         
         // 입력된 정보 출력
@@ -73,6 +107,7 @@ public class Array03 {
             double average = sum / (double)SIZE;
             
             System.out.println((i+1)+"번 시험 결과");
+<<<<<<< HEAD
             System.out.printf("국어: %03d점 영어: %03d점 수학: %03d점\n", 
                     korean, english, math);
             System.out.printf("총점: %03d점 평균: %.2f점\n", sum, average);
@@ -90,6 +125,18 @@ public class Array03 {
 
 
 
+=======
+            System.out.printf("국어: %03d점 영어: %03d점 수학: %03d점\n",
+                    korean, english, math);
+            System.out.printf("총점: %03d점 평균: %.2f점", sum, average);
+            System.out.println("-----------------------");
+        }    
+            
+        scanner.close();
+    }
+
+}
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 
 
 

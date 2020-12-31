@@ -5,7 +5,11 @@ package syntax;
 // import 라는 키워드를 이용해서 불러와야 한다.
 import java.util.Scanner;
 public class ScannerTest {
+<<<<<<< HEAD
     public static void main(String[] args) {
+=======
+    public static void main(String[] agrs) {
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
         Scanner scanner = new Scanner(System.in);
         
         // 1. 정수 입력 받기
@@ -22,6 +26,7 @@ public class ScannerTest {
         
         // 3. 스트링 입력 받기
         //    스트링 입력 받을 때에는 scanner의 nextLine() 메소드를 호출해주면 된다.
+<<<<<<< HEAD
         //    스트링 입력시에는 한가지 주의할 점이 있는데
         //    nextInt(), nextDouble() 등의 숫자를 입력하는 메소드 이후에는
         //    nextLine()을 곧장 사용하면 안된다.
@@ -35,15 +40,37 @@ public class ScannerTest {
         //    nextInt()가 123만 가져가고 \n은 버퍼메모리에 남겨둔다.
         //    하지만 nextLine()의 경우, 모든 문자를 다 가져올 수 있는데
         //    버퍼메모리에 남아있던 \n을 보고 "아 사용자가 입력을 끝냈구나!" 라고
+=======
+        //    스트링 입력 시에는 한 가지 주의할 점이 있는데
+        //    nextInt(), nextDouble() 등의 숫자를 입력하는 메소드 이후에는
+        //    nextLine()을 곧장 사용하면 안 된다.
+        //    왜냐하면 우리가 키보드로 입력한 값이
+        //    버퍼메모리에 가는데
+        //    우리가 입력이 끝났다 를 알려주기 위해서 엔터를 치면,
+        //    nexrInt(), nextDouble()은 멍청하게
+        //    엔터를 제외한 숫자값만 버퍼메모리에서 읽어서 없앤다.
+        //    즉 nextInt()를 실행해서
+        //    123\n 라고 입력하면,
+        //    nextInt()가 123만 가져가고 \n은 버퍼메모리에 남겨둔다.
+        //    하지만 nextLine()의 경우, 모든 문자를 다 가져올 수 있는데
+        //    버퍼메모리에 남아있던 \n 을 보고 "아 사용자가 입력을 끝냈구나!" 라고
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
         //    착각하게 된다.
         //    이것이 scanner의 nextLine() 버그이다.
         
         //    해당 버그를 해결하기 위해서는
         //    nextInt, nextDouble을 사용하고
+<<<<<<< HEAD
         //    nextLine을 사용하기 전에 nextLine을 한번 더 실행해주면 된다.
         
         System.out.print("이름: ");
         //스캐너 버그 해결을 위한 scanner.nextLine() 실행
+=======
+        //    nextLine을 사용하기 전에 nextLine을 한 번 더 실행해주면 된다.
+        
+        System.out.print("이름: ");
+        // 스캐너 버그 해결을 위한 scanner.nextLine() 실행
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
         scanner.nextLine();
         
         String name = scanner.nextLine();
@@ -51,6 +78,7 @@ public class ScannerTest {
         
         // Scanner와 같이 버퍼메모리를 만들어서 읽는
         // 클래스의 경우 close()라는 메소드를 가장 마지막에 호출해서
+<<<<<<< HEAD
         // 버퍼메모리를 종료시켜주는것이 좋다.
         scanner.close();
                 
@@ -65,3 +93,11 @@ public class ScannerTest {
 
 
 
+=======
+        // 버퍼메모리를 종료시켜주는 것이 좋다.
+        scanner.close();
+        
+    }
+
+}
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e

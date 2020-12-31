@@ -2,17 +2,25 @@ package abstraction;
 
 import java.util.Scanner;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 public class GradeApp {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		GradeController gradeController = new GradeController();
+<<<<<<< HEAD
 		
 		
 		// 1등: a, 합계: 270 ,평균: 90.0
 		// 2등: b, 합계: 240 ,평균: 80.0
 		// 3등: c, 합계: 210 ,평균: 70.0
 		GradeDto grade = null;
+=======
+		GradeDto grade = null;
+		
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 		while(true) {
 			System.out.println("[메뉴] 0.종료 1.성적등록 2.등수발표(이름,합계,평균)");
 			switch (scanner.next()) {
@@ -25,6 +33,7 @@ public class GradeApp {
 				grade.setMath(scanner.nextInt());
 				gradeController.postGrade(grade);
 				break;
+<<<<<<< HEAD
 			case "2":
 				GradeDto[] grades = gradeController.getGradeSort();
 				for(int i=0;i<gradeController.getCount(); i++) {
@@ -32,14 +41,29 @@ public class GradeApp {
 				}
 				break;
 
+=======
+
+			case "2":
+				GradeDto[] grades = gradeController.getGradeSort();
+				for(int i = 0; i < gradeController.getCount(); i++) {
+					System.out.println(grades[i].toString());
+				}
+				break;
+				
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 			case "0":
 				System.out.println("시스템 종료");
 				return;
 			}
 		}
 	}
+<<<<<<< HEAD
 
 }
+=======
+}
+
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 class GradeDto {
 	private String name;
 	private int kor, eng, math, sum;
@@ -57,11 +81,18 @@ class GradeDto {
 	public void setSum(int sum) {this.sum = sum;}
 	public float getAvg() {return avg;}
 	public void setAvg(float avg) {this.avg = avg;}
+<<<<<<< HEAD
 
 	@Override
 	public String toString() {
 		return "GradeDto [name=" + name + ", kor=" + kor + ", eng=" + eng + ", math=" + math + ", sum=" + sum + ", avg="
 				+ avg + "]";
+=======
+	
+	@Override
+	public String toString() {
+		return "GradeDto [name=" + name + ", kor=" + kor + ", eng=" + eng + ", math=" + math + ", sum=" + sum + ", avg=" + avg + "]";
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 	}
 }
 interface GradeService {
@@ -73,7 +104,11 @@ interface GradeService {
 	public GradeDto[] gradeSort();
 	public int count();
 }
+<<<<<<< HEAD
 class GradeServiceImpl implements GradeService{
+=======
+class GradeServiceImpl implements GradeService {
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 	private GradeDto[] grades;
 	private int count;
 	public GradeServiceImpl() {
@@ -90,7 +125,11 @@ class GradeServiceImpl implements GradeService{
 	}
 	@Override
 	public void updateGrade(GradeDto grade) {
+<<<<<<< HEAD
 		for(int i=0; i< count; i++) {
+=======
+		for(int i = 0; i < count; i++) {
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 			if(grade.getName().equals(grades[i].getName())) {
 				grades[i].setKor(grade.getKor());
 				grades[i].setEng(grade.getEng());
@@ -101,7 +140,11 @@ class GradeServiceImpl implements GradeService{
 	}
 	@Override
 	public void deleteGrade(GradeDto grade) {
+<<<<<<< HEAD
 		for(int i=0; i< count; i++) {
+=======
+		for(int i = 0; i < count; i++) {
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 			if(grade.getName().equals(grades[i].getName())) {
 				grades[i] = grades[count - 1];
 				grades[count - 1] = null;
@@ -116,17 +159,30 @@ class GradeServiceImpl implements GradeService{
 	}
 	@Override
 	public float avg(int sum) {
+<<<<<<< HEAD
 		return (float)sum / 3;
+=======
+		return (float) sum / 3;
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 	}
 	@Override
 	public GradeDto[] gradeSort() {
 		int size = grades.length;
+<<<<<<< HEAD
 		for(int i=0; i< size-1; i++) {
 			for(int j= i+1; j< size; j++) {
 				if(grades[i].getSum() < grades[j].getSum()) {
 					GradeDto t = grades[i];
 					grades[i] = grades[j];
 					grades[j] = t;
+=======
+		for(int i = 0; i < size -1; i++) {
+			for(int j = i+1; j < size; j++) {
+				if(grades[i].getSum() < grades[i].getSum()) {
+					GradeDto temp = grades[i];
+					grades[i] = grades[j];
+					grades[j] = temp;
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 				}
 			}
 		}
@@ -140,7 +196,11 @@ class GradeServiceImpl implements GradeService{
 class GradeController {
 
 	private GradeService gradeService;
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 	public GradeController() {
 		gradeService = new GradeServiceImpl();
 	}
@@ -148,6 +208,7 @@ class GradeController {
 	public void postGrade(GradeDto grade) {
 		gradeService.addGrade(grade);
 	}
+<<<<<<< HEAD
 
 	public void putGrade(GradeDto grade) {
 		gradeService.updateGrade(grade);
@@ -175,3 +236,30 @@ class GradeController {
 }
 
 
+=======
+	
+	public void putGrade(GradeDto grade) {
+		gradeService.updateGrade(grade);
+	}
+	
+	public void deleteGrade(GradeDto grade) {
+		gradeService.deleteGrade(grade);
+	}
+	
+	public int getSum(GradeDto grade) {
+		return gradeService.sum(grade);
+	}
+	
+	public float getAvg(int sum) {
+		return gradeService.avg(sum);
+	}
+	
+	public GradeDto[] getGradeSort() {
+		return gradeService.gradeSort();
+	}
+	
+	public int getCount() {
+		return gradeService.count();
+	}
+}
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e

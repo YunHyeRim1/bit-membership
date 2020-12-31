@@ -1,8 +1,13 @@
 package loop;
+<<<<<<< HEAD
 
 import java.util.Scanner;
 
 // 별찍기 10번
+=======
+// 별찍기 10번
+import java.util.Scanner;
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 public class PrintStar10 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -11,6 +16,7 @@ public class PrintStar10 {
         System.out.println("--------");
         System.out.print("출력할 줄 수: ");
         int userNumber = scanner.nextInt();
+<<<<<<< HEAD
         for (int i = 1; i <= 2 * userNumber - 1; i++) {
             String stars = new String();
             
@@ -80,3 +86,64 @@ public class PrintStar10 {
 
 
 
+=======
+        for(int i = 1; i <= 2 * userNumber - 1; i++) {
+            String stars = new String();
+            
+           if(i == 1 || i == 2 * userNumber - 1) {
+               // 맨 처음이나 맨 마지막 줄
+               
+               // 별을 담당하는 j for 문
+               for(int j = 1; j <= 2 * userNumber - 1; j++) {
+                   stars += "*";
+               }
+           }else if(i < userNumber) {
+               // 맨 첫 줄을 제외한 윗 부분
+               // userNumber가 5이
+               // i가 2, 3, 4일 때 여기로 들어온다.
+               
+               // 왼쪽 별을 담당하는 j for 문
+               for(int j = i; j <= userNumber; j++) {
+                   stars += "*";
+               }
+               int upperI = i - 1;
+               // 가운데 공백을 담당하는 j for 문
+               for(int j = 1; j <= 2 * upperI - 1; j++) {
+                   stars += " ";
+               }
+               // 오른쪽 별을 담당하는 j for 문
+               for(int j = i; j <= userNumber; j++) {
+                   stars += "*";
+               }
+           }else {
+               // 맨 마지막 줄을 제외한 아랫 부분
+               int lowerI = i - userNumber + 1;
+               
+               // 왼쪽 별을 담당하는 j for 문
+               for(int j = 1; j <= lowerI; j++) {
+                   stars += "*";
+               }
+               // 전체 폭을 계산하여 저장하는 maxWidth 변수
+               int maxWidth = 2 * userNumber - 1;
+               // 공백 폭을 계산하여 저장하는 spaceWidth 변수
+               int spaceWidth = maxWidth - 2 * lowerI;
+               
+               // 가운데 공백을 담당하는 j for 문
+               for(int j = 1; j <= spaceWidth; j++) {
+                   stars += " ";
+               }
+               
+               // 오른쪽 별을 담당하는 j for 문
+               for(int j = 1; j <= lowerI; j++) {
+                   stars += "*";
+               }
+           }
+
+            
+            System.out.println(stars);
+        }
+        
+        scanner.close();
+    }
+}
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e

@@ -2,8 +2,12 @@ package abstraction;
 import java.util.Scanner;
 public class UserApp {
 	public static void main(String[] args) {
+<<<<<<< HEAD
 		int a = 3;
 		String s = "";
+=======
+		
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 		Scanner scanner = new Scanner(System.in);
 		UserController userController = new UserController();
 		UserDto user = null;
@@ -14,7 +18,11 @@ public class UserApp {
 					+ "(10)전체 회원수");
 			switch (scanner.next()) {
 			case "1":
+<<<<<<< HEAD
 				System.out.println("[회원가입] 아이디,비번,이름 ");
+=======
+				System.out.println("[회원가입] 아이디, 비번, 이름 ");
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 				user = new UserDto();
 				user.setUserid(scanner.next());
 				user.setPassword(scanner.next());
@@ -22,7 +30,11 @@ public class UserApp {
 				userController.postJoin(user);
 				break;
 			case "2":
+<<<<<<< HEAD
 				System.out.println("[로그인] 아이디,비번 ");
+=======
+				System.out.println("[로그인] 아이디, 비번 ");
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 				user = new UserDto();
 				user.setUserid(scanner.next());
 				user.setPassword(scanner.next());
@@ -41,7 +53,11 @@ public class UserApp {
 				userController.putUpdate(user);
 				break;
 			case "4":
+<<<<<<< HEAD
 				System.out.println("[회원탈퇴] 아이디,비번 ");
+=======
+				System.out.println("[회원탈퇴] 아이디, 비번 ");
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
 				user.setUserid(scanner.next());
 				user.setPassword(scanner.next());
 				userController.deleteUser(user);

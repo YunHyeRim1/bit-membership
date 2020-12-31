@@ -15,7 +15,11 @@ package syntax;
 public class TypeCasting {
     public static void main(String[] args) {
         byte myByte = 0;
+<<<<<<< HEAD
         int myInt = 10;
+=======
+        int myInt =10;
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
         
         //myInt에 myByte의 값을 담을때에는
         //암시적 형변환이 일어난다.
@@ -41,13 +45,18 @@ public class TypeCasting {
         //int를 쓰면 거의 모든 문제가 해결된다...
         
         //이렇게 다양한 데이터타입이 있는 이유는
+<<<<<<< HEAD
         //예전 70~80년대만 하더라도 
+=======
+        //예전 70~80년대만 하더라도
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
         //컴퓨터의 가용자원(=리소스)가 매우 적었기 때문에
         //정확한 범위를 먼저 계산하고 그리고 그 후에 해당 값이 정확하게 만족하는
         //데이터타입을 정확하게 썼기 때문이다.
         
     }
 }
+<<<<<<< HEAD
 
 
 
@@ -69,3 +78,5 @@ public class TypeCasting {
 
 
 
+=======
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e

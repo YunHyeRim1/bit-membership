@@ -1,9 +1,17 @@
 package loop;
+<<<<<<< HEAD
 
 import java.util.Scanner;
 // 별찍기 4번
 public class PrintStar04 {
     public static void main(String[] args) {
+=======
+// 별찍기 4번
+import java.util.Scanner;
+public class 
+PrintStar04 {
+    public static void main(String[]args) {
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
         Scanner scanner = new Scanner(System.in);
         System.out.println("--------");
         System.out.println("별찍기 4번");
@@ -12,6 +20,7 @@ public class PrintStar04 {
         int userNumber = scanner.nextInt();
         for(int i = 1; i <= userNumber; i++) {
             String stars = new String();
+<<<<<<< HEAD
             //공백을 담당하는 j for 문
             for(int j = 1; j <= i - 1; j++) {
                 stars += " ";
@@ -21,6 +30,17 @@ public class PrintStar04 {
                 stars += "*";
             }
             
+=======
+            // 공백을 담당하는 j for 문
+            for(int j = 1; j <= i - 1; j++) {
+                stars += " ";
+            }
+            // 별을 담당하는 j for 문
+            for(int j = i; j <= userNumber; j++) {
+                stars += "*";
+            
+            }
+>>>>>>> 02bb71477c4c8cdccfe81c1929f0e810d1379a8e
             System.out.println(stars);
         }
         
